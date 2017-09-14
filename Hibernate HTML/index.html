@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hibernate</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script src="js/entity/Product.js" type="text/javascript"></script>
+    <script src="js/dao/Manager.js" type="text/javascript"></script>
+    <script src="js/controller/Controller.js" type="text/javascript"></script>
+    <script>var controller = new Controller();</script>
+    <script>controller.manager.addProduct(new Product(3, 4))</script>
+    <script>localStorage.setItem('controller', controller)</script>
+    <script>localStorage.setItem('manager', controller.manager)</script>
+</head>
+<body>
+    <header>
+        <h1 align="center">Domicilies Tool in Hibernate</h1>
+    </header>
+    <hr width="63%" align="center" color="yellow" noshade>
+    <nav>
+        <ul>
+            <li><a href="#panel1">Categories</a></li>
+            <li><a href="#panel2">Places</a></li>
+            <li><a href="#panel3">Articles</a></li>
+            <li><a href="#panel4">Products</a></li>
+        </ul>
+    </nav>
+    <div id="panel1" class="panel">
+        <button class="buttonAdd" onclick="window.open('addCategory.html', '_blank')">Add Category</button>
+        <button class="buttonUpdate">Update</button>
+        <table id="tableCategories" align="center" border="1" onclick="controller.actionListener(event);"> <!--onclick="controller.actionListener(event);"-->
+            <thead>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Super Category</th>
+                <th>Edit</th>
+                <th>Remove</th>
+            </thead>
+            <tr onclick="controller.index(this)">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td style="text-align:center;">
+                    <input id="edit1" type="submit" name="edit" value="Edit" onclick="window.open('editCategory.html', '_blank')">
+                </td>
+                <td style="text-align:center;">
+                    <input id="remove1" type="submit" name="removeCategory" value="Remove">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="panel2" class="panel">
+        <button class="buttonAdd" onclick="window.open('addPlace.html', '_blank')">Add Place</button>
+        <button class="buttonUpdate">Update</button>
+        <table id="tablePlaces" align="center" border="1" onclick="controller.actionListener(event);">
+            <thead>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Localization</th>
+            <th>Edit</th>
+            <th>Remove</th>
+            </thead>
+            <tr onclick="controller.index(this)">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td style="text-align:center;">
+                    <input id="edit2" type="submit" name="edit" value="Edit" onclick="window.open('editPlace.html', '_blank')">
+                </td>
+                <td style="text-align:center;">
+                    <input id="remove2" type="submit" name="removePlace" value="Remove">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="panel3" class="panel">
+        <button class="buttonAdd" onclick="window.open('addArticle.html', '_blank')">Add Article</button>
+        <button class="buttonUpdate">Update</button>
+        <table id="tableArticles" align="center" border="1" onclick="controller.actionListener(event);">
+            <thead>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Place</th>
+            <th>Category</th>
+            <th>Edit</th>
+            <th>Remove</th>
+            </thead>
+            <tr onclick="controller.index(this)">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td style="text-align:center;">
+                    <input id="edit3" type="submit" name="edit" value="Edit" onclick="window.open('editArticle.html', '_blank')">
+                </td>
+                <td style="text-align:center;">
+                    <input id="remove3" type="submit" name="removeArticle" value="Remove">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="panel4" class="panel">
+        <button class="buttonAdd" onclick="window.open('addProduct.html', '_blank')">Add Product</button>
+        <button class="buttonUpdate">Update</button>
+        <table id="tableProducts" align="center" border="1" onclick="controller.actionListener(event);">
+            <thead>
+            <th>Id</th>
+            <th>Article</th>
+            <th>Edit</th>
+            <th>Remove</th>
+            </thead>
+            <tr onclick="controller.index(this)">
+                <td></td>
+                <td></td>
+                <td style="text-align:center;">
+                    <input id="edit4" type="submit" name="edit" value="Edit" onclick="window.open('editProduct.html', '_blank')">
+                </td>
+                <td style="text-align:center;">
+                    <input id="remove4" type="submit" name="removeProduct" value="Remove">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

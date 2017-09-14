@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Product</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesProduct.css" />
+    <link id="import_index" rel="import" href="index.html" />
+    <script>
+        var controller = localStorage.getItem('controller');
+        var manager = localStorage.getItem('manager');
+        console.log(manager);
+        console.log(controller.manager);
+    </script>
+</head>
+<body>
+    <header>
+        <h1 align="center">Add Product</h1>
+    </header>
+    <hr width="63%" align="center" color="yellow" noshade>
+    <dev>
+        <form>
+            <div>
+                <label>Id: </label>
+                <input id="input_id_product" type="text">
+            </div>
+            <div>
+                <label>Article: </label>
+                <select id="select_article">
+                    <option value="article1">Article1</option>
+                    <option value="article2">Article2</option>
+                    <option value="article3">Article3</option>
+                </select>
+            </div>
+            <div>
+                <button class="button_save" type="submit">Save</button>
+                <button class="button_cancel" type="submit">Cancel</button>
+            </div>
+        </form>
+    </dev>
+</body>
+</html>

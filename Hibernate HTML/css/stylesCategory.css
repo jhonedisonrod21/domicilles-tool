@@ -1,0 +1,79 @@
+body {
+    background-color: #511200;
+}
+
+h1 {
+    font-family: 'Monoton', sans-serif;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 2.5%;
+    /*margin-toxp: 1em;*/
+    /*margin-bottom: 1.3em;*/
+    color: #FFA906;
+}
+
+header {
+    background-color: #353535;
+    height: 5em;
+    width: 63%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -0.5em;
+}
+
+form {
+    margin: 0 auto;
+    width: 450px;
+    padding: 1em;
+    border: 10px solid #CCCC;
+    border-radius: 1em;
+    background-color: darkgoldenrod;
+    box-shadow: 0 0 200px black;
+    margin-top: 3em;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    padding-right: 0.5%;
+}
+
+input {
+    width: 300px;
+    padding-top: 0.4em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+textarea {
+    height: 100px;
+    width: 300px;
+    padding-top: 0.4em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+select {
+    width: 300px;
+    border: 1px solid #999;
+    padding-top: 0.4em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+button {
+    /*padding-left: 90px;*/
+    /*margin-left: 0.5em;*/
+    /*display: ruby;*/
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+.button_save {
+    margin-left: 8em;
+}
+
+.button_cancel {
+    margin-left: 1em;
+}
